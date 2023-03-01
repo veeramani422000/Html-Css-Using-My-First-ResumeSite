@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---navbar--- */
+
+header {
+  display: flex;
+  justify-content: end;
+  background-color: transparent;
+  background-color: rgb(112, 146, 156);
+}
+nav ul li {
+  display: inline-block;
+  padding: 25px 10px;
+}
+li,
+a {
+  font-weight: 500;
+  font-size: 22px;
+  padding: 6px 18px;
+  text-decoration: none;
+  color: black;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background-color: rgb(15, 162, 199);
+  border-radius: 2px;
+}
+.wrapper {
+  background-color: white;
+  background-image: url("/assets/photo/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover / center;
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.wrapper:before {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    rgba(149, 201, 221, 0.95),
+    rgba(130, 181, 194, 0.95),
+    rgba(136, 202, 214, 0.9),
+    rgba(161, 190, 197, 0.85),
+    rgba(167, 194, 201, 0.95)
+  );
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* ---home=-- */
+
+.home {
+  display: flex;
+  padding: 132px 10%;
+  justify-content: space-between;
+}
+.home img {
+  border-radius: 50%;
+  width: 19%;
+  height: 220px;
+  float: right;
+}
+.home-info {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+.home-p {
+  text-align: justify;
+  padding-top: 10px;
+}
+.home-btn {
+  padding: 10px 12px;
+  background-color: rgb(15, 162, 199);
+  border: none;
+  margin-top: 12px;
+}
+
+/* ---- about ---- */
+
+.about {
+  position: relative;
+  padding: 0px 100px 10px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about .title {
+  text-align: center;
+  color: white;
+  font-weight: 500px;
+}
+.about h1 {
+  font-size: 30px;
+  color: white;
+  padding: 12px 0;
+  font-weight: normal;
+  text-align: justify;
+}
+.about .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .row .about-info {
+  flex: 1 1 38rem;
+  padding: 2px 1rem;
+  padding-left: 6rem;
+}
+.about .row .about-img {
+  flex: 1 1 38rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about .row .about-info h3 {
+  font-size: 25px;
+  color: black;
+  padding: 10px 0;
+}
+.about .row .about-info span {
+  font-size: 25px;
+  color: white;
+  padding: 0 0.5rem;
+}
+.about .about-btn {
+  padding: 13px 27px;
+  background-color: rgb(15, 162, 199);
+  border: none;
+}
+
+/* --- skill --- */
+
+.skills {
+  padding: 22px 20px;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+table {
+  background: white;
+}
+table,
+tr,
+td {
+  text-align: center;
+  margin: auto;
+  border: 1px solid rgb(24, 142, 172);
+  width: 50%;
+}
+table,
+tr,
+td {
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  font-size: 20px;
+}
+table {
+  background: rgb(15, 162, 199);
+  margin: auto;
+  border: none;
+  padding: 0;
+}
+.skills-table {
+  padding: 18px;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+}
+.project h1 {
+  font-weight: 100;
+  color: #fff;
+  padding: 20px 0px 5px 0px;
+  text-align: center;
+}
+.project p {
+  font-weight: 100;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* ---  contact --- */
+
+.contact {
+  position: relative;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .content {
+  font-size: large;
+  padding: 30px 20px;
+  text-align: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contact-info .box {
+  position: relative;
+  padding: 20px 0px;
+  display: flex;
+}
+.container .contact-info .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container .contact-info .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contact-info .box .text h2 {
+  font-weight: 500;
+  color: black;
+}
+.contact-map {
+  width: 60%;
+  /* padding: 40px; */
+}
+.link {
+  padding: 15px;
+}
+.link ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.btn-link {
+  padding: 9px 25px;
+  border: none;
+  margin-left: 25px;
+}
+.bg-github {
+  background-color: white;
+  /* border-radius: 70%; */
+}
+.bg-gmail {
+  background-color: white;
+  /* border-radius: 50px; */
+}
+.bg-btn {
+  background-color: rgb(15, 162, 199);
+  padding: 5px 15px;
+  border: none;
+}
+
+/* social bar */
+.social-bar {
+  position: fixed;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateX(-18%);
+  z-index: 800;
+}
+
+.social-bar a {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
+  margin-top: 3px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.social-bar .fa {
+  padding: 0px;
+}
+.social-bar a:hover {
+  margin-right: -15px;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+  top: 20px;
+}
+.whatsapp {
+  background: #25d366;
+  color: white;
+  top: 80px;
+}
+.twitter {
+  background: #55acee;
+  color: white;
+}
+.linkedin {
+  background: rgb(10, 102, 194);
+  color: white;
+  top: 140px;
+}
+.youtube {
+  background: #ff0000;
+  color: white;
+  top: 200px;
+}
+.instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: white;
+  top: 200px;
+}
